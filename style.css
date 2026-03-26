@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background: linear-gradient(to right, #01070b, #0f2530, #052024);
+}
+/* nav=================== */
+.btn button {
+  color: black;
+  border-color: rgb(153, 227, 158);
+  font-weight: 600;
+  border: none;
+}
+.btn button:hover {
+  border-color: rgb(153, 227, 158);
+  color: #030914;
+  background-color: rgb(153, 227, 158);
+}
+.list li:hover {
+  color: rgb(153, 227, 158);
+}
+/* .btntwo button{
+  color: #030914;
+  background-color: rgb(153 ,227, 158 );
+  font-weight: 600;
+}
+.btntwo button:hover{
+  background-color:white;
+  border: none;
+} */
+
+/* ============ hero section  */
+
+.txt h1 {
+  font-size: 70px;
+  padding-block: 25px;
+}
+.txt span {
+  color: rgb(153, 227, 158);
+}
+.one button {
+  color: black;
+  background-color: rgb(153, 227, 158);
+  border-color: rgb(153, 227, 158);
+}
+.two button {
+  background-color: transparent;
+  border-color: rgb(153, 227, 158);
+  color: rgb(153, 227, 158);
+}
+.one button:hover {
+  background: transparent;
+  color: rgb(153, 227, 158);
+  border-color: rgb(153, 227, 158);
+}
+.two button:hover {
+  color: black;
+  background-color: rgb(153, 227, 158);
+  border-color: rgb(153, 227, 158);
+}
+.ani {
+  transition: property duration timing-function;
+}
+.ani img:hover {
+  transform: scale(1.2);
+}
+.txt {
+  animation: slideRight 1s ease forwards;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.img {
+  animation: slideleft 1s ease forwards;
+}
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/* =================== section 2  */
+.two {
+  background: linear-gradient(to bottom, #01070b, #0a181f, #052024);
+}
+.icon {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.text-1 span {
+  color: rgb(153, 227, 158);
+}
+.text-1 {
+  animation: sidein 1.05s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
+}
+
+@keyframes sidein {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.img-1 {
+  animation:
+    sideup 1,
+    05s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
+}
+
+@keyframes sideup {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* =================== text section === */
+.three {
+  background: linear-gradient(to left, rgb(20, 20, 28), rgb(1, 1, 19));
+}
+.text span {
+  color: rgb(153, 227, 158);
+}
+.text h1 {
+  font-weight: 300;
+}
+.text {
+  animation:
+    sidetext 1,
+    05s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes sidetext {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.img-1 {
+  animation:
+    sideimg 1,
+    08s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes sideimg {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* -==================== text btn=========  */
+.text-btn {
+  border: 1.5px solid grey;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #254c5a, #030d18);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.text-bar span{
+  color: rgb(153, 227, 158);
+}
+.text-bar h1{
+  font-weight: 500;
+}
+.btn-bar button{
+  color: black;
+  background-color: rgb(153, 227, 158);
+  border: 1px solid rgb(153, 227, 158);
+  font-weight: 600;
+}
+.btn-bar button:hover{
+  background-color: transparent;
+  color: rgb(153, 227, 158);
+}
+/* =============== icon-text =================  */
+.text-bar-one span{
+  color: rgb(153, 227, 158);
+}
+.text-bar-icon h1{
+  color: rgb(248, 242, 242);
+  font-weight: 400;
+}
+.icon-bar i{
+  color: rgb(153, 227, 158);
+}
+.img-bar{
+  animation: upimg 1.5s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+@keyframes upimg {
+  from{
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.text-bar-one{
+  animation: righttext 1.5s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes righttext {
+from{
+  transform: translateY(-150px);
+  opacity: 0;
+}
+to{
+  transform: translateY(0px);
+  opacity: 1;
+}
+}
+/* ================== upgrede ========  */
+.upgrede-text span{
+  color: rgb(153, 227, 158);
+}
+.main-icon{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+ /* ================ tfoot ==========  */
+ input{
+  border-color: rgb(153, 227, 158);
+ }
+ .tfoot p{
+  color: rgb(172, 165, 165);
+ }
+
+ ul li:hover  {
+  color: rgb(153, 227, 158);
+ }
+
+
+ /* ============ responsive ==================  */
+ @media (max-width:768px) {
+  .list{
+    display: none;
+  }
+  .btn button{
+    display: none;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .txt{
+    width: 100%;
+    margin: auto; 
+  }
+  .section-2{
+     display: flex;
+    flex-direction: column;
+  }
+  .main-tfoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-btn{
+    display: flex;
+    flex-direction: column;
+  } 
+
+ }
+  
